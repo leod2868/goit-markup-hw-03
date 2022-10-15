@@ -1,0 +1,227 @@
+/* основной цвет текста #757575 */
+/* вторичній цвет текста #212121*/
+/*  белій #FFFFFF */
+/*акцент #2196F3 */
+/*цвет ссілок в футере rgba(255, 255, 255, 0.6); */
+/* цвет background секции hero и футера #2F303A*/
+/* основной цвет background секции #F5F5F5  */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196F3;
+  --white-color: #FFFFFF;
+  --black-color: #000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --primary-background-color: #F5F5F5;
+  --secondary-background-color: #2F303A;
+  --thirdly-background-color: #F5F4FA;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+
+/* стилизация логотипа */
+.roof-logo {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1. 19;
+}
+
+.roof-multi {
+  color: var(--black-color);
+}
+
+/* стилизация nav */
+.roof-nav-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.roof-nav-link:hover,
+.roof-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* спроба підсвітити назву активної сторінки,але не вийшло */
+.current {
+  color: var(--accent-color);
+}
+
+/* стилизация connection */
+.roof-connection-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1. 14;
+  letter-spacing: 0.02em
+}
+
+.roof-connection-link:hover,
+.roof-connection-link:focus {
+  color: var(--accent-color);
+}
+
+/*стилизация заглавий вторичнім цветом текста */
+.sechion-title {
+  color: var(--title-text-color);
+}
+
+/* стилизація секции hero */
+.hero {
+  background: var(--secondary-background-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em ;
+  text-transform : uppercase ;
+}
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* стилизація трьох секцій */
+.advantage .sechion-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14 ;
+}
+
+.development {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team .sechion-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team .speciality {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.sechion .team {
+  background-color: var(--thirdly-background-color);
+}
+
+/* стилизація footer */
+.footer {
+  background: var(--secondary-background-color);
+}
+
+.footer-logo {
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+}
+
+.footer-multi {
+  color: var(--accent-color);
+}
+
+.contacts-addres {
+  color: var(--white-color);
+  text-decoration: none;
+  line-height: 1.71 ;
+}
+
+.contacts-link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  line-height: 1.71;
+}
+
+.contacts-addres:hover,
+.contacts-addres:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+address {
+  font-style: normal
+}
+
+/* стілізація сторінки portofolio */
+.new-button {
+  color: var(--title-text-color);
+  background-color: var(--thirdly-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+
+}
+
+.new-button:hover,
+.new-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color)
+}
+
+.card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.0;
+  letter-spacing: 0.06em;
+}
+
+.sechion-text {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
