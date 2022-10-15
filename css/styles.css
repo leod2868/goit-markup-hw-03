@@ -109,6 +109,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px ;
+  padding: 10px 32px ;
+  min-width: 216px ;
 }
 
 /* стилизація трьох секцій */
