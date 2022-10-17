@@ -5,6 +5,14 @@
 /*цвет ссілок в футере rgba(255, 255, 255, 0.6); */
 /* цвет background секции hero и футера #2F303A*/
 /* основной цвет background секции #F5F5F5  */
+html {
+box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
 
 :root {
   --primary-text-color: #757575;
@@ -87,6 +95,8 @@ body {
 /* стилизація секции hero */
 .hero {
   background: var(--secondary-background-color);
+  text-align: center;
+  outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -94,9 +104,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  
   letter-spacing: 0.06em ;
   text-transform : uppercase ;
+  margin-top: 0 ;
+  margin-bottom: 30 px ;
 }
 
 .button {
@@ -112,29 +124,39 @@ body {
   border-radius: 4px ;
   padding: 10px 32px ;
   min-width: 216px ;
+  height: 50px;
+  display: inline-block ;
+  border: 2px solid transparent;
 }
 
 /* стилизація трьох секцій */
+.benefits , .activity  , .team {
+  outline: 2px solid tomato;
+}
+
+
+
+
 .advantage .sechion-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14 ;
 }
 
-.development {
+  .development  {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.team .sechion-title {
+ .group.sechion-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.team .speciality {
+.group.speciality {
   font-size: 16px;
   line-height: 1.19;
 }
@@ -192,7 +214,13 @@ address {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+  text-align: center;
   letter-spacing: 0.03em;
+  display: inline-block ;
+  padding: 6px 22px;
+  border-radius: 4px;
+  height: 38px;
+  border: 2px solid transparent;
 
 }
 
@@ -227,4 +255,10 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.conteiner {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 
+}
