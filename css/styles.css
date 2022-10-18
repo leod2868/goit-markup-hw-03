@@ -36,9 +36,12 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;  
+   margin: 0;  
 }
 
 /* стилизация логотипа */
+
 .roof-logo {
   color: var(--accent-color);
   text-decoration: none;
@@ -53,7 +56,7 @@ body {
 }
 
 /* стилизация nav */
-.roof-nav-link {
+  .nav-link , .connection-link {
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -62,29 +65,16 @@ body {
   letter-spacing: 0.02em;
 }
 
-.roof-nav-link:hover,
-.roof-nav-link:focus {
+.nav-link:hover,
+.nav-link:focus, 
+.connection-link:hover,
+.connection-link:focus
+{
   color: var(--accent-color);
 }
-
-/* спроба підсвітити назву активної сторінки,але не вийшло */
 .current {
   color: var(--accent-color);
-}
 
-/* стилизация connection */
-.roof-connection-link {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1. 14;
-  letter-spacing: 0.02em
-}
-
-.roof-connection-link:hover,
-.roof-connection-link:focus {
-  color: var(--accent-color);
 }
 
 /*стилизация заглавий вторичнім цветом текста */
@@ -96,7 +86,6 @@ body {
 .hero {
   background: var(--secondary-background-color);
   text-align: center;
-  outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -108,7 +97,7 @@ body {
   letter-spacing: 0.06em ;
   text-transform : uppercase ;
   margin-top: 0 ;
-  margin-bottom: 30 px ;
+  margin-bottom: 30px ;
 }
 
 .button {
@@ -130,52 +119,74 @@ body {
 }
 
 /* стилизація трьох секцій */
-.benefits , .activity  , .team {
-  outline: 2px solid tomato;
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-
-
-
 .advantage .sechion-title {
+  margin-top: 0 ;
+  margin-bottom: 10px ;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14 ;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.idea{
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.activity {
+  padding-bottom: 94px;
 }
 
   .development  {
+  margin-top: 0 ;
+  margin-bottom: 50px ;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
- .group.sechion-title {
+ .group .sechion-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
-.group.speciality {
+.speciality {
+  margin: 0 ;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.sechion .team {
+ .team {
   background-color: var(--thirdly-background-color);
+  padding-top: 94px ;
+  padding-bottom: 94px ;
 }
 
 /* стилизація footer */
 .footer {
   background: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-logo {
+  .footer-logo {
   color: var(--white-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1,19;
+  margin-bottom: 20px;
 }
 
 .footer-multi {
@@ -186,6 +197,7 @@ body {
   color: var(--white-color);
   text-decoration: none;
   line-height: 1.71 ;
+  margin-bottom: 9px;
 }
 
 .contacts-link {
