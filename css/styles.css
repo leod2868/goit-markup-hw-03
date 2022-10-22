@@ -263,7 +263,9 @@ img {
 }
 
 /* стілізація сторінки portofolio */
-
+.top {
+  border: 1px solid #ECECEC;
+}
 .products {
   display: flex;
   justify-content: center;
