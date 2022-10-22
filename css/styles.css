@@ -107,6 +107,7 @@ img {
 .hero {
   background: var(--secondary-background-color);
   text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -119,8 +120,6 @@ img {
   text-transform : uppercase ;
   margin: 0 auto 30px auto ; 
   width: 696px;
-  
-
 }
 
 .button {
@@ -136,9 +135,8 @@ img {
   border-radius: 4px ;
   padding: 10px 32px ;
   min-width: 216px ;
-  height: 50px;
   display: inline-block ;
-  border: 2px solid transparent;
+  border: none;
 }
 
 /* стилизація трьох секцій */
@@ -149,7 +147,7 @@ img {
 .advantage {
   display:flex;
 }
- .balance {
+.balance {
   width: 270px;
 }
 .balance:not(:last-child) {
@@ -183,7 +181,7 @@ img {
 .gadget ,
 .group {
  display: flex;
- justify-content: space-between;
+ gap: 30px;
 }
  .group .sechion-title {
   font-weight: 500;
@@ -193,7 +191,16 @@ img {
   margin-bottom: 10px;
   margin-top: 0;
 }
-
+.friend {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .speciality {
   margin: 0 ;
   font-weight: 400;
@@ -221,13 +228,10 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1,19;
-  margin-bottom: 20px;
 }
-
 .footer-multi {
   color: var(--accent-color);
 }
-
 .contacts-addres {
   color: var(--white-color);
   text-decoration: none;
@@ -247,9 +251,15 @@ img {
 .contacts-link:focus {
   color: var(--accent-color);
 }
-
-address {
-  font-style: normal
+.contacts-item {
+  margin-bottom: 9px;
+}
+.contacts-item:last-child {
+  margin-bottom: 0;
+}
+.address {
+  font-style: normal ;
+  margin-top: 20px;
 }
 
 /* стілізація сторінки portofolio */
@@ -258,7 +268,7 @@ address {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 .part:not(:last-child) {
 margin-right: 8px;
@@ -276,8 +286,7 @@ margin-right: 8px;
   display: inline-block ;
   padding: 6px 22px;
   border-radius: 4px;
-  height: 38px;
-  border: 2px solid transparent;
+  border: none ;
 
 }
 .new-button:hover,
@@ -296,13 +305,18 @@ margin-right: 8px;
   font-size: 18px;
   line-height: 2.0;
   letter-spacing: 0.06em;
-  margin-top: 20px;
   margin-bottom: 4px;
+  margin-top: 0;
 }
 .section-text {
   font-size: 16px;
   line-height: 1.9;
   margin: 0;
+}
+.combo {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  padding: 20px 24px;
 }
 .direction {
   margin-right: 30px;

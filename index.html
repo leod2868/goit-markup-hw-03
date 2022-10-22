@@ -31,9 +31,11 @@
   </header>
   <main>
     <section class="hero">
-      <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <!--Вирішив що ця кнопка не е посиланням , а відкривае модальне вікно на цій же сторінці-->
-      <button type="button" class="button">Замовити послугу</button>
+      <div class="conteiner">
+       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+       <!--Вирішив що ця кнопка не е посиланням , а відкривае модальне вікно на цій же сторінці-->
+       <button type="button" class="button">Замовити послугу</button>
+      </div>
     </section>
     <section class="sechion benefits ">
       <div class="conteiner">
@@ -81,33 +83,33 @@
       <div class="conteiner">
       <h2 class="sechion-title development ">Наша команда</h2>
       <ul class="group list">
-        <li>
+        <li class="friend">
           <img src="./images/igor.jpg" alt="Igor Demjanenko Product Designer" width="270" height="260">
-          <p>
-          <h3 class="sechion-title">Ігор Дем'яненко</h3>
-          </p>
-          <p class="speciality">Product Designer</p>
+          <div class="name">
+           <h3 class="sechion-title">Ігор Дем'яненко</h3>
+           <p class="speciality">Product Designer</p>
+          </div>
         </li>
-        <li>
+        <li class="friend">
           <img src="./images/olga.jpg" alt="Olga Repina Frontend Developer" width="270" height="260">
-          <p>
-            <h3 class="sechion-title">Ольга Рєпіна</h3>
-          </p>
-          <p class="speciality">Frontend Developer</p>
+          <div class="name">
+           <h3 class="sechion-title">Ольга Рєпіна</h3>
+           <p class="speciality">Frontend Developer</p>
+          </div>
         </li>
-        <li>
+        <li class="friend">
           <img src="./images/mikola.jpg" alt="Mikola Tarasov Marketing" width="270" height="260">
-          <p>
-            <h3 class="sechion-title">Микола Тарасов</h3>
-          </p>
-          <p class="speciality">Marketing</p>
+          <div class="name">
+           <h3 class="sechion-title">Микола Тарасов</h3>
+           <p class="speciality">Marketing</p>
+          </div>
         </li>
-        <li>
-          <img src="./images/mihailo.jpg" alt="Mihailo Ermakov UI Designer" width="270" height="260">
-          <p>
-            <h3 class="sechion-title">Михайло Єрмаков</h3>
-          </p>
-          <p class="speciality">UI Designer</p>
+        <li class="friend">
+           <img src="./images/mihailo.jpg" alt="Mihailo Ermakov UI Designer" width="270" height="260">
+          <div class="name">
+           <h3 class="sechion-title">Михайло Єрмаков</h3>
+           <p class="speciality">UI Designer</p>
+          </div>
         </li>
       </ul>
       </div>
@@ -116,12 +118,12 @@
   <footer class="footer">
     <div class="conteiner">
     <a href="./index.html" class="footer-logo">Web<span class="footer-multi">Studio</span></a>
-    <address>
+    <address class="address">
       <ul class="contacts list">
-        <li><a href="https://goo.gl/maps/RR4ERz3BGo1rFnMU8" class="contacts-addres" target="_blank" rel="noopener norefferer nofoiiow">м. Київ,
+        <li class="contacts-item"><a href="https://goo.gl/maps/RR4ERz3BGo1rFnMU8" class="contacts-addres" target="_blank" rel="noopener norefferer nofoiiow">м. Київ,
             пр-т Лесі Українки, 26</a></li>
-        <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
+        <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+        <li class="contacts-item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
       </ul>
     </address>
     </div>
